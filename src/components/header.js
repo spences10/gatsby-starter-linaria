@@ -23,7 +23,7 @@ const StyledHeader = styled.header`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <div>
-      <h1 style={{ margin: 0 }}>
+      <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
     </div>
