@@ -12,11 +12,16 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "pretty-quick",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "dependencies": {
     "gatsby": "^2.23.3",
@@ -35,7 +40,9 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "husky": "^4.2.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1"
   },
   "prettier": {
     "singleQuote": true,
@@ -44,5 +51,13 @@
     "printWidth": 70,
     "arrowParens": "avoid",
     "proseWrap": "always"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/gatsby-starter-linaria.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spences10/gatsby-starter-linaria/issues"
+  },
+  "homepage": "https://github.com/spences10/gatsby-starter-linaria#readme"
 }
